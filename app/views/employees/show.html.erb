@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @employee.Name %>
+</p>
+<br/>
+<p>
+  <strong>Age:</strong>
+  <%= @employee.Age %>
+</p>
+<br/>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @employee.Gender %>
+</p>
+<br/>
+<p>
+  <strong>Designation:  </strong>
+  <%= @employee.Designation %>
+</p>
+<br/>
+<%= link_to 'Edit', edit_employee_path(@employee), class:"btn btn-outline-primary" %> 
+<%= link_to 'Back', employees_path, class:"btn btn-outline-primary" %>
